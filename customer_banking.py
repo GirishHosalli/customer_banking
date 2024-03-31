@@ -12,9 +12,26 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
-    savings_balance = float(input("Please enter Savings Account Balance: $ "))
-    savings_interest = float(input("Please enter Savings Account Interest Rate: "))
-    savings_maturity = int(input("Please enter Savings Account Maturity (number of months): "))
+    while True:
+        try:
+            savings_balance = float(input("Please enter Savings Account Balance: $ "))
+            break
+        except ValueError:
+            print("Input error. Please enter an integer or a decimal value.")
+        
+    while True:
+        try:
+            savings_interest = float(input("Please enter Savings Account Interest Rate: "))
+            break
+        except ValueError:
+            print("Input error. Please enter an integer or a decimal value.")
+
+    while True:
+        try:
+            savings_maturity = int(input("Please enter Savings Account Maturity (number of months): "))
+            break
+        except ValueError:
+            print("Input error. Please enter an integer.")
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -26,9 +43,27 @@ def main():
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
-    cd_balance = float(input("Please enter CD Account Balance: $ "))
-    cd_interest = float(input("Please enter CD Account Interest Rate: "))
-    cd_maturity = int(input("Please enter CD Account Maturity (number of months): "))
+    while True:
+        try:
+            cd_balance = float(input("Please enter CD Account Balance: $ "))
+            break
+        except ValueError:
+            print("Input error. Please enter an integer or a decimal value.")
+
+    while True:
+        try:
+            cd_interest = float(input("Please enter CD Account Interest Rate: "))
+            break
+        except ValueError:
+            print("Input error. Please enter an integer or a decimal value.")
+
+    while True:
+        try:
+            cd_maturity = int(input("Please enter CD Account Maturity (number of months): "))
+            break
+        except:
+            print("Input error. Please enter an integer.")
+            
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
 
