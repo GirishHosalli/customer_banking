@@ -12,9 +12,10 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
+    print("\n")
     while True:
         try:
-            savings_balance = float(input("Please enter Savings Account Balance: $ "))
+            savings_balance = float(input("Please enter current Savings Account Balance: $ "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
@@ -38,14 +39,17 @@ def main():
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f"CD Account earned interest amount: {interest_earned: ,.2f}")
-    print(f"CD Account updated balance amount: {updated_savings_balance: ,.2f}")
+    print('-' * 60)
+    print(f"Savings Account interest earned: ${interest_earned: ,.2f}")
+    print(f"Savings Account updated balance: ${updated_savings_balance: ,.2f}")
+    print('-' * 60)
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
+    print("\n")
     while True:
         try:
-            cd_balance = float(input("Please enter CD Account Balance: $ "))
+            cd_balance = float(input("Please enter current CD Account Balance: $ "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
@@ -63,14 +67,17 @@ def main():
             break
         except:
             print("Input error. Please enter an integer.")
-            
+
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f"CD Account earned interest amount: {interest_earned: ,.2f}")
-    print(f"CD Account updated balance amount: {updated_cd_balance: ,.2f}")
+    print('-' * 60)
+    print(f"CD Account interest earned: ${interest_earned: ,.2f}")
+    print(f"CD Account updated balance: ${updated_cd_balance: ,.2f}")
+    print('-' * 60)
+    print("\n")
 
 if __name__ == "__main__":
     # Call the main function.
