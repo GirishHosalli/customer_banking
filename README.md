@@ -7,14 +7,14 @@ updated balances after a specified number of months.
 ## Technical details:
 This application has following programs - 
 ```python
-Accounts.py 
+*Accounts.py*
 ```
 ```python
-savings_account.py
+*savings_account.py*
 ```
 ```python
-cd_account.py
+*cd_account.py*
 ```
 ```python
-customer_banking.py
+*customer_banking.py*
 ```
