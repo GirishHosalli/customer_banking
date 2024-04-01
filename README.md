@@ -9,11 +9,11 @@ This application has following programs -
 ```python
 Accounts.py
 ```
-THis program contains **Account** class definition. 
-    **Account** class has following three methods:
-- **init** This initializes the class by setting initial values for *balance* and *interest*
-- **set_balance** This method updates **Account** instance *balance* based on input parameter value
-- **set_interest** This method updates **Account** instance *interest* based on input parameter value  
+This program contains ***Account*** class definition. 
+    ***Account*** class has following three methods:
+- ***init*** This initializes the class by setting initial values for *balance* and *interest*
+- ***set_balance*** This method updates ***Account*** instance *balance* based on input parameter value
+- ***set_interest*** This method updates ***Account*** instance *interest* based on input parameter value  
 
 ```python
 savings_account.py
