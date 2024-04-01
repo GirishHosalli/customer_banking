@@ -6,9 +6,7 @@ updated balances after a specified number of months.
 
 ## Technical details:
 This application has following programs - 
-```python
-Accounts.py
-```
+```python Accounts.py```
 This program contains ***Account*** class definition. 
     ***Account*** class has following three methods:
 - ***init*** This initializes the class by setting initial values for *balance* and *interest*
