@@ -44,3 +44,16 @@ interest and updated balance. Those values are displayed to the user.
 
 ![alt text](image-1.png)
 
+## Use:
+When the program is executed it will prompt the user to input Savings Account current balance, 
+Savings Account interest rate (%) and Savings Account Maturity (months)
+![alt text](image-2.png)
+Then it will display Interest earned and Savings Account updated balance
+![alt text](image-3.png)
+
+Then it will prompt the user to input CD Account current balance, 
+CD Account interest rate (%) and CD Account Maturity (months)
+![alt text](image-4.png)
+Then it will display Interest earned and CD Account updated balance
+![alt text](image-5.png)
+
