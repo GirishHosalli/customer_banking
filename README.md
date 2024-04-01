@@ -42,3 +42,5 @@ balance amount, interest and maturity period values.
 Then it calls function **create_savings_account** and **create_cd_account** which will return 
 interest and updated balance. Those values are displayed to the user. 
 
+![alt text](image-1.png)
+
