@@ -6,7 +6,7 @@ updated balances after a specified number of months.
 
 ## Technical details:
 This application has following programs - 
-###```python 
+```python 
 Accounts.py
 ```
 This program contains ***Account*** class definition. 
@@ -26,7 +26,7 @@ It returns *new balance and interest amount*
 ```python
 cd_account.py
 ```
-### ```python cd_account.py``` program has a function **create_cd_account**
+Above program has a function **create_cd_account**
 It receives three parameters *balance, interest_rate, months*.
 It is used to create a CD account instance, calculates interest earned, and updates the account balance.
 It returns *new balance and interest amount*
@@ -34,7 +34,7 @@ It returns *new balance and interest amount*
 ```python
 customer_banking.py
 ```
-### When user executes this program, it will prompt the user to input Savings and CD Account's initial
+When user executes this program, it will prompt the user to input Savings and CD Account's initial
 balance amount, interest and maturity period values. 
 Then it will call function **create_savings_account** and **create_cd_account** which will return 
 interest and updated balance. Those values are displayed to the user. 
