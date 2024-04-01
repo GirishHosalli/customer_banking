@@ -18,7 +18,7 @@ This program contains ***Account*** class definition.
 ```python
 savings_account.py
 ```
-#### Above program has a function **create_savings_account**
+This program has a function **create_savings_account**
 It receives three parameters *balance, interest_rate, months*.
 It is used to create a savings account instance, calculates interest earned, and updates the account balance.
 It returns *new balance and interest amount*
@@ -26,7 +26,7 @@ It returns *new balance and interest amount*
 ```python
 cd_account.py
 ```
-#### Above ```python cd_account.py``` program has a function **create_cd_account**
+### ```python cd_account.py``` program has a function **create_cd_account**
 It receives three parameters *balance, interest_rate, months*.
 It is used to create a CD account instance, calculates interest earned, and updates the account balance.
 It returns *new balance and interest amount*
