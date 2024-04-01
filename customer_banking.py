@@ -15,21 +15,21 @@ def main():
     print("\n")
     while True:
         try:
-            savings_balance = float(input("Please enter current Savings Account Balance: $ "))
+            savings_balance = float(input(f"Please enter current Savings Account Balance{' ':<7}: $ "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
         
     while True:
         try:
-            savings_interest = float(input("Please enter Savings Account Interest Rate: "))
+            savings_interest = float(input(f"Please enter Savings Account Interest Rate (%){' ':<5}: "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
 
     while True:
         try:
-            savings_maturity = int(input("Please enter Savings Account Maturity (number of months): "))
+            savings_maturity = int(input(f"Please enter Savings Account Maturity (months){' ':<5}: "))
             break
         except ValueError:
             print("Input error. Please enter an integer.")
@@ -39,24 +39,30 @@ def main():
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print('-' * 60)
-    print(f"Savings Account interest earned: ${interest_earned: ,.2f}")
-    print(f"Savings Account updated balance: ${updated_savings_balance: ,.2f}")
-    print('-' * 60)
+    # For writing interestGet spaces to pad for Interest line
+    if len(str(savings_maturity)) == 1:
+        int_spaces = ' ' * 7
+    else:
+        int_spaces = ' ' * 6
+
+    print('-' * 65)
+    print(f"For {savings_maturity} months Savings Account earned interest{int_spaces}: ${interest_earned: ,.2f}")
+    print(f"Savings Account updated balance{' ':<20}: ${updated_savings_balance: ,.2f}")
+    print('-' * 65)
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
     print("\n")
     while True:
         try:
-            cd_balance = float(input("Please enter current CD Account Balance: $ "))
+            cd_balance = float(input(f"Please enter current CD Account Balance {' ':<11}: $ "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
 
     while True:
         try:
-            cd_interest = float(input("Please enter CD Account Interest Rate: "))
+            cd_interest = float(input(f"Please enter CD Account Interest Rate (%){' ':<10}: "))
             break
         except ValueError:
             print("Input error. Please enter an integer or a decimal value.")
@@ -73,14 +79,20 @@ def main():
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print('-' * 60)
-    print(f"CD Account interest earned: ${interest_earned: ,.2f}")
-    print(f"CD Account updated balance: ${updated_cd_balance: ,.2f}")
-    print('-' * 60)
+    if len(str(cd_maturity)) == 1:
+        int_spaces = ' ' * 11
+    else:
+        int_spaces = ' ' * 10
+        
+    bal_spaces = ' ' * 24
+
+    print('-' * 65)
+    print(f"For {cd_maturity} months CD Account earned interest {int_spaces}: ${interest_earned: ,.2f}")
+    print(f"CD Account updated balance {bal_spaces}: ${updated_cd_balance: ,.2f}")
+    print('-' * 65)
     print("\n")
 
 if __name__ == "__main__":
     # Call the main function.
     main()
 
-    
