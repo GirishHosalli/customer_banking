@@ -7,9 +7,9 @@ updated balances after a specified number of months.
 ## Technical details:
 This application has following programs - 
 ```python
-## Accounts.py
+Accounts.py
 ```
-### This program contains **Account** class definition. 
+#### Above program contains **Account** class definition. 
 **Account** has following three methods:
 - **init** This initializes the class by setting initial values for *balance* and *interest*
 - **set_balance** This method updates **Account** instance *balance* based on input parameter value
@@ -18,7 +18,7 @@ This application has following programs -
 ```python
 savings_account.py
 ```
-### This program has a function **create_savings_account**
+#### Above program has a function **create_savings_account**
 It receives three parameters *balance, interest_rate, months*.
 It is used to create a savings account instance, calculates interest earned, and updates the account balance.
 It returns *new balance and interest amount*
@@ -26,7 +26,7 @@ It returns *new balance and interest amount*
 ```python
 cd_account.py
 ```
-### This program has a function **create_cd_account**
+#### Above ```python cd_account.py``` program has a function **create_cd_account**
 It receives three parameters *balance, interest_rate, months*.
 It is used to create a CD account instance, calculates interest earned, and updates the account balance.
 It returns *new balance and interest amount*
